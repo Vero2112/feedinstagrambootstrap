@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+	<script src="https://kit.fontawesome.com/1bf1deae99.js" crossorigin="anonymous"></script>
+
+	<title>Instagram Feed</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+
+		<nav class="col-12 navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="https://www.instagram.com">
+				<i class="fab fa-Instagram" style="font-size: 30px;"></i>
+				<img src="https://pakoarroyo.controlzeta.com.mx/img/instagram.png" width="150" height="50">
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			</div>
+	
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				Create new post
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content border-dark">
+						<div class="modal-header border-white">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-12">
+										<div class="form-floating">
+											<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 75px"></textarea>
+											<label for="floatingTextarea2"></label>
+										  </div>
+
+
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="modal-body border-white">
+							<button type="button" class="bg-white border border-secondary rounded">
+								<i class="fa-solid fa-camera"></i>
+							</button>
+							<button type="button" class="bg-white border border-secondary rounded">
+								<i class="fa-solid fa-location-pin"></i>
+							</button>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-white border-dark" data-bs-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-success border-success">Publish</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			<!-- INICIO DROPDOWN PRUEBA SI FUNCIONA!! -->
+			<div class="nav-item dropdown d-flex">
+				<a class="nav-link dropdown-toggle text-secondary" href="#" id="dropdownMenu2" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">
+
+					<i class="fa-solid fa-gear"></i>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
+					<li><button class="dropdown-item" type="button">Action</button></li>
+					<li><button class="dropdown-item" type="button">Another action</button></li>
+					<li><button class="dropdown-item" type="button">Something else here</button></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="#">Log Out</a></li>
+				</ul>
+			</div>
+			<!-- FIN DROPDOWN PRUEBA SI FUNCIONA!! -->
+
+		</nav>
+	</div>
+	<!-- NAVS AND TAPS  -->
+
+	<!-- INICIO BOTONES DE FORMATO -->
+	<div class="container-fluid">
+		<!-- 1a fila -->
+		<div class="row ">
+			<div class="col-5 bg-white"></div>
+			<div class="col-2 bg-white">
+				<ul class="nav nav-pills justify-content-center m-3" id="pills-tab" role="tablist">
+					<!-- INICIO BOTON DE FORMATO 1 -->
+					<li class="nav-item" role="presentation">
+						<button class="btn btn-outline-secondary border-white" id="pills-home-tab" data-bs-toggle="pill"
+							data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+							aria-selected="true">
+							<i class="fa fa-th" aria-hidden="true"></i>
+						</button>
+					</li>
+					<!-- FIN BOTON DE FORMATO 1 -->
+					<!-- INICIO BOTON DE FORMATO 2 -->
+					<li class="nav-item" role="presentation">
+						<button class="btn btn-outline-secondary border-white" id="pills-profile-tab"
+							data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+							aria-controls="pills-profile" aria-selected="false">
+							<i class="fa fa-square" aria-hidden="true"></i>
+						</button>
+					</li>
+					<!-- FIN BOTON DE FORMATO 2 -->
+				</ul>
+			</div>
+			<div class="col-5 bg-white"></div>
+		</div>
+	</div>
+	<!-- FIN BOTONES DE FORMATO -->
+
+	<!-- FORMATOS INCIO -->
+	<div class="tab-content" id="pills-tabContent">
+		<!-- Inicio Formato 1 (cuadricula 3x3)-->
+		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			<!-- INICIO 1a fila -->
+			<div class="card-group">
+				<!-- INICIO 1a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/1.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 1A imagen -->
+
+				<!-- INICIO 2a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/2.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 2a imagen -->
+
+				<!-- INICIO 3a imagen -->
+				<div class="card">
+
+					<video height="350" controls>
+						<source src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/src/master/images/3.mp4" type="video/mp4">
+				</div>
+				<!-- FIN 3A imagen -->
+			</div>
+			<!-- FIN 1a fila -->
+
+
+			<!-- INICIO 2a fila -->
+			<div class="card-group">
+				<!-- INICIO 4a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/4.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 4a imagen -->
+
+				<!-- INICIO 5a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/5.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 5a imagen -->
+
+				<!-- INICIO 6a imagen -->
+				<div class="card">
+					<video height="350" controls>
+						<source src="C:\Users\Vero\Downloads\Instagram feed\6.mp4" type="video/mp4">
+				</div>
+				<!-- FIN 6a imagen -->
+			</div>
+			<!-- FIN 2a fila -->
+
+
+			<!-- INICIO 3a fila -->
+			<div class="card-group">
+				<!-- INICIO 7a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/7.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 7a imagen -->
+
+				<!-- INICIO 8a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/8.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 8a imagen -->
+
+				<!-- INICIO 9a imagen -->
+				<div class="card">
+					<img class="card-img-top"
+						src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/9.jpg"
+						alt="Card image cap" style="height: 350px; ">
+				</div>
+				<!-- FIN 9a imagen -->
+			</div>
+			<!-- FIN 3a fila -->
+			<div class="row" style="display: flex">
+				<div class="col-4 bg-white m-0,1 img-container ">
+					<img src="https://pbs.twimg.com/media/CAet3MBUMAAvJSl?format=jpg&name=small"class="img-fluid" >
+				</div>
+				<div class="col-4  bg-white m-0,1 img-container">
+					<img src="https://www.caf.fr/sites/default/files/caf/711/Fotolia_57897570_M.jpg" class="img-responsive">
+				</div>
+				<div class="col-4 border-warning bg-white m-0,1">3a imagen VIDEO</div>
+			</div>
+
+		</div>
+		<!-- FIN Formato 1 (cuadricula 3x3)-->
+
+
+								<!-- <div class="container-fluid"> -->
+								<!-- 1a fila
+										<div class="row" style="display: flex">
+											<div class="col-4 bg-white m-0,1 img-container ">
+												<img src="https://pbs.twimg.com/media/CAet3MBUMAAvJSl?format=jpg&name=small"class="img-fluid" >
+											</div>
+											<div class="col-4  bg-white m-0,1 img-container">
+												<img src="https://www.caf.fr/sites/default/files/caf/711/Fotolia_57897570_M.jpg" class="img-responsive">
+											</div>
+											<div class="col-4 border-warning bg-white m-0,1">3a imagen VIDEO</div>
+										</div>
+										2a fila
+										<div class="row">
+											<div class="col-4 bg-secondary m-0,1">
+												<img src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/4.jpg"
+												style="background-size:100% 100%">
+											</div>
+											<div class="col-4 bg-secondary m-0,1">
+												<img src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/5.jpg"
+												style="background-size:100% 100%">
+											</div>
+											<div class="col-4 bg-secondary m-0,1">6a imagen VIDEO</div>
+										</div>
+										3a fila
+										<div class="row">
+											<div class="col-4 bg-secondary m-0,1">
+												<img src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/7.jpg"
+													class="img-fluid" alt="Responsive image" max-width="100%" height="100%">
+											</div>
+											<div class="col-4 bg-secondary m-0,1">
+												<img src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/8.jpg"
+													class="img-fluid" alt="Responsive image" max-width="100%" height="auto">
+											</div>
+											<div class="col-4 bg-secondary m-0,1">
+												<img src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/9.jpg"
+													class="img-fluid" alt="Responsive image" max-width="100%" height="auto">
+											</div>
+										</div>
+									</div> -->
+								<!-- </div> -->
+
+	
+	<!-- Inicio Formato 2 (cards) -->
+		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+			<div class="container-fluid bg-light">
+				<!-- 1ra foto -->
+				<div class="row bg-light">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 mt-5 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://pbs.twimg.com/media/CAet3MBUMAAvJSl?format=jpg&name=small"
+											alt="Card image cap"	style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. This is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 1a foto -->
+
+				<!-- 2ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://www.caf.fr/sites/default/files/caf/711/Fotolia_57897570_M.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 2a foto -->
+
+				<!-- 3ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://pbs.twimg.com/media/CAet3MBUMAAvJSl?format=jpg&name=small"
+											alt="Card image cap">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 3a foto -->
+
+				<!-- 4ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/4.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 4a foto -->
+
+				<!-- 5ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/5.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 5a foto -->
+
+				<!-- 6ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://pbs.twimg.com/media/CAet3MBUMAAvJSl?format=jpg&name=small"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 6a foto -->
+
+				<!-- 7ra foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/7.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 7a foto -->
+
+				<!-- 8a foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/8.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-10 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+										<input type="text" name="anything" placeholder="Comment">
+
+									</div>
+									<div class="col-2 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 8a foto -->
+
+				<!-- 9a foto -->
+				<div class="row bg-light mt-5 mb-5">
+					<!-- INICIO 1a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 1a columna -->
+
+					<!-- INICIO 2a columna -->
+					<div class="col-6 m-0 bg-light">
+						<div class="card p-0 bg-white border-white">
+							<!-- INICIO HEADER -->
+							<div class="card-header border-white bg-white m-0 ">
+								<div class="row">
+									<div class="col-10">
+										<h5 class="card-title text-start">My first photo</h5>
+									</div>
+									<div class="col-2 text-secondary">
+										<p class="card-number text-end">12/14</p>
+									</div>
+								</div>
+							</div>
+							<!-- FIN HEADER -->
+
+							<!-- INICIO BODY -->
+							<div class="card-body bg-white p-0 m-0">
+								<div class="row">
+									<div class="col-12">
+										<img class="card-img-top"
+											src="https://bitbucket.org/codingacademy/instagram-with-bootstrap/raw/60f0ffe3b1a8143d02ceeb6a7b9187b32ec3a8b0/images/9.jpg"
+											alt="Card image cap" style="height: 500px; ">
+									</div>
+								</div>
+							</div>
+							<!-- FIN BODY -->
+
+							<!-- INICIO FOOTER -->
+							<div class="card-footer border-white bg-white">
+								<div class="row">
+									<div class="col-12">
+										<p class="card-totallikes"><strong>23 likes</strong></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<p class="card-text">This is my first photo of the feed. this is a multi line
+											comment for testing purposes. I am learning to code with
+											<span><strong>#BreatheCode</strong></span>
+										</p>
+									</div>
+								</div>
+								<!-- INICIO REACCIONES FOOTER -->
+								<div class="row text-secondary">
+									<div class="col-2 text-start">
+										<i class="fa fa-heart-o m-1" aria-hidden="true"></i>
+									</div>	
+									<div class="col-4 form-floating border-white mb-3">
+											<input type="text" class="form-control" id="floatingInput" placeholder="comment" style="height: 50px">
+											<label for="floatingInput">Comment</label>
+									</div>
+									</div>
+									<div class="col-4 text-end">
+										<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+									</div>
+								</div>
+								<!-- FIN REACCIONES FOOTER -->
+							</div>
+							<!-- FIN FOOTER -->
+						</div>
+					</div>
+					<!-- FIN 2a columna -->
+
+					<!-- INICIO 3a columna -->
+					<div class="col-3 bg-light">
+					</div>
+					<!-- FIN 3a columna -->
+				</div>
+				<!-- fin 9a foto -->
+
+			</div>
+
+		</div>
+	<!-- Fin Formato 2 -->
+	</div>
+	<!-- FORMATOS FIN -->
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+		</script>
+</body>
+
+</html>
